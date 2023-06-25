@@ -23,3 +23,19 @@ function order(words){
     }
     return sortedArray.join(' ');
   }
+
+
+  function order(words){
+    var array = words.split(' ');
+    var sortedArray = [];
+    for(i = 0; i <= array.length; i++) {
+      console.log(`I'm searching for the number ${i} in the array of words`)
+      for(const currentWord of array) {
+        if(currentWord.indexOf(i) >= 0) {
+          console.log(`I've found number ${i} in the word ${currentWord}! I will add it to sortedArray`)
+          sortedArray.push(currentWord);
+        }
+      }
+    }
+    return sortedArray.join(' ');
+  }
