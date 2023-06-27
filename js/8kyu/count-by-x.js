@@ -16,3 +16,14 @@ function countBy(x, n) {
     }
     return z;
 }
+
+
+function countBy(x, n) {
+  let z = [];
+  let i = 0
+while (i < n) {
+  i++;
+  z.push(i*x)
+}
+  return z;
+}
