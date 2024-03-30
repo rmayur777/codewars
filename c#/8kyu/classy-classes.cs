@@ -4,19 +4,14 @@
 
 
 public class Person
-{   
- public Person(string name, int age)
-    {
-        this.Name = name;
-        this.Age = age;
-    }
+{  
+  private string Name;
+  private int Age;
+  public string Info => $"{Name}s age is {Age}";
 
-    public string Name { get; set; }
-    public int Age { get; set; }
-
-    public string Info
-    {
-        get { return $"{this.Name}s age is {this.Age}"; }
-        
-    }
+  public Person(string name, int age)
+  {
+    Name = name;
+    Age = age;
+  }
 }
